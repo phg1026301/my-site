@@ -29,6 +29,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
   background: var(--bg);
@@ -53,6 +57,29 @@ body {
   margin-top: 12px;
   font-size: 1.1rem;
   opacity: 0.9;
+}
+
+/* 메뉴 */
+.menu {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.menu a {
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--hero-text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.9);
 }
 
 /* 섹션 공통 */
@@ -142,6 +169,10 @@ main {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .reveal,
   .card {
     transition: none;
