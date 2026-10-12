@@ -1,3 +1,5 @@
+console.log("홍길동의 자기소개 페이지에 오신 걸 환영합니다!");
+
 // 푸터에 현재 연도 표시
 document.getElementById("year").textContent = new Date().getFullYear();
 
