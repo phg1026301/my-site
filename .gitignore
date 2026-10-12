@@ -1,0 +1,14 @@
+# 환경 변수 (예시 파일은 올림)
+.env
+.env.*
+!.env.example
+
+# 로그
+*.log
+
+# OS 생성 파일
+.DS_Store
+Thumbs.db
+
+# 의존성
+node_modules/
